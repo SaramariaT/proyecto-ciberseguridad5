@@ -1,0 +1,110 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Header usando Flexbox */
+header {
+    background-color: black;
+    color: white;
+    padding: 24px 32px;
+    /* Uso de Flexbox para centrar el título */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+/* Sección Hero con Flexbox */
+.hero {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 80px 32px;
+    /* Uso de Flexbox para organizar elementos verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features section con Grid */
+.features {
+    padding: 64px 32px;
+    /* Uso de Grid para mostrar características en 3 columnas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    background-color: white;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px gray;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 24px;
+    height: 60px;
+    /* Uso de Flexbox para centrar íconos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon i {
+    font-size: 40px;
+}
+
+.feature-card h3 {
+    margin-bottom: 16px;
+    color: white;
+}
+
+/* About section con Grid */
+.about {
+    padding: 64px 32px;
+    background-color: white;
+    /* Uso de Grid para la estructura del contenido */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.about-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+
+.about-content p {
+    margin-bottom: 24px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px black;
+}
